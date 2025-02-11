@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="header">
+    <text class="title">图片上传</text>
+  </view>
+  <view class="content">
+    <button bindtap="chooseImage">选择图片</button>
+    <image wx:if="{{photo}}" src="{{photo}}" mode="aspectFit" class="preview-image"></image>
+    <button bindtap="uploadImage" disabled="{{isProcessing}}">上传图片</button>
+    <image wx:if="{{processedImage}}" src="{{processedImage}}" mode="aspectFit" class="processed-image"></image>
+  </view>
+</view> 

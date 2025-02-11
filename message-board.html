@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板 - 基于图像识别的智能理书辅助小程序</title>
+    <link rel="stylesheet" type="text/css" href="styles.css?v=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="message-board.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="message-page">
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">首页</a>
+                <div class="nav-links">
+                    <a href="upload-new.html" class="nav-link">图片处理</a>
+                    <a href="message-board.html" class="nav-link active">留言板</a>
+                    <a href="test-download.html" class="nav-link">测试集下载</a>
+                </div>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>留言板</h1>
+            <p class="subtitle">留下您的想法和建议</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="message-board">
+            <div class="message-form">
+                <h2>留下你的想法</h2>
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="name">昵称</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言内容</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">发送留言</button>
+                </form>
+            </div>
+
+            <div class="messages-container">
+                <h2>留言列表</h2>
+                <div class="messages" id="messagesList">
+                    <div class="loading-message">正在加载留言...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <!-- 保持与主页相同的页脚 -->
+    </footer>
+
+    <script src="message-board.js"></script>
+</body>
+</html> 

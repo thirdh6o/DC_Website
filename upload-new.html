@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片处理 - 基于图像识别的智能理书辅助小程序</title>
+    <link rel="stylesheet" type="text/css" href="styles.css?v=1.0">
+    <link rel="stylesheet" href="upload-new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="upload-page">
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">首页</a>
+                <div class="nav-links">
+                    <a href="upload-new.html" class="nav-link active">图片处理</a>
+                    <a href="message-board.html" class="nav-link">留言板</a>
+                    <a href="test-download.html" class="nav-link">测试集下载</a>
+                </div>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>图片处理</h1>
+            <p class="subtitle">上传并处理您的图片</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="process-section">
+            <h2>在线图片处理</h2>
+            <div class="process-container">
+                <div class="upload-box">
+                    <form id="uploadForm">
+                        <div class="upload-area" id="uploadArea">
+                            <input type="file" id="photoInput" accept="image/*" required>
+                            <div class="upload-content">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>点击或拖拽图片到此处</p>
+                                <p class="upload-tip">支持jpg、png格式</p>
+                            </div>
+                        </div>
+                        <button type="submit" id="processBtn" class="process-btn" disabled>
+                            <i class="fas fa-magic"></i> 开始处理
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="preview-box">
+                    <div class="preview-item">
+                        <h3><i class="fas fa-image"></i> 原始图片</h3>
+                        <div class="preview-area" id="originalPreview">
+                            <div class="placeholder">请选择图片</div>
+                        </div>
+                    </div>
+                    <div class="preview-item">
+                        <h3><i class="fas fa-paint-brush"></i> 处理结果</h3>
+                        <div class="preview-area" id="processedPreview">
+                            <div class="placeholder">等待处理</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>致力于为您呈现最优质的图书整理辅助</p>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <p><i class="fas fa-envelope"></i> 2514340934@qq.com</p>
+                <p><i class="fas fa-phone"></i> 17824770785</p>
+            </div>
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-qq"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 基于图像识别的智能理书辅助小程序. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="upload-new.js"></script>
+</body>
+</html> 
