@@ -4,61 +4,6 @@
 
 本项目是一个基于图像识别的智能理书辅助小程序，旨在帮助用户通过上传图片进行图书整理和信息提取。用户可以通过小程序上传图片，系统将对图片进行处理并返回处理结果。
 
-## 项目结构
-
-```
-project-root/
-├── api/
-│   ├── add_message.php
-│   ├── config.php
-│   ├── get_messages.php
-│   ├── get_photos.php
-│   ├── process_image.py
-│   ├── test_environment.php
-│   ├── test_python.php
-│   ├── upload_photo.php
-│   └── create_photos_table.sql
-├── create_table.sql
-├── index.html
-├── message-board.html
-├── message-board.css
-├── message-board.js
-├── styles.css
-├── test-download.html
-├── upload-new.html
-├── upload-new.css
-├── upload-new.js
-└── miniprogram/
-    ├── app.js
-    ├── app.json
-    ├── app.wxss
-    └── pages/
-        ├── index/
-        │   ├── index.js
-        │   ├── index.wxml
-        │   ├── index.wxss
-        │   └── index.json
-        ├── login/
-        │   ├── login.js
-        │   ├── login.wxml
-        │   ├── login.wxss
-        │   └── login.json
-        ├── message-board/
-        │   ├── message-board.js
-        │   ├── message-board.wxml
-        │   ├── message-board.wxss
-        │   └── message-board.json
-        ├── test-download/
-        │   ├── test-download.js
-        │   ├── test-download.wxml
-        │   ├── test-download.wxss
-        │   └── test-download.json
-        └── upload/
-            ├── upload.js
-            ├── upload.wxml
-            ├── upload.wxss
-            └── upload.json
-```
 
 ## 功能概述
 
@@ -69,7 +14,7 @@ project-root/
 
 ## 技术栈
 
-- **前端**：微信小程序框架，使用 WXML、WXSS 和 JavaScript。
+- **前端**：网页
 - **后端**：PHP 作为服务器端语言，使用 MySQL 数据库存储留言和图片信息。
 - **图像处理**：使用 Python 脚本进行图像识别和处理。
 
@@ -80,7 +25,7 @@ project-root/
 - PHP 7.0 及以上
 - MySQL 数据库
 - Python 3.x
-- OpenCV 库（用于图像处理）
+
 
 ### 2. 数据库设置
 
@@ -94,9 +39,9 @@ project-root/
 
 确保您的 PHP 服务器正在运行，并且可以访问 `api` 目录中的 PHP 文件。
 
-### 5. 运行小程序
+### 5. 打开网站
 
-在微信开发者工具中打开 `miniprogram` 目录，编译并运行小程序。
+
 
 ## 使用说明
 
