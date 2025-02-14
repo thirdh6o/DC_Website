@@ -16,9 +16,9 @@ import numpy as np
 class XunfeiOCR:
     def __init__(self):
         # 讯飞开放平台配置
-        self.app_id = "1cfc0b9f"
-        self.api_key = "22b072423d184b6d7c94bfe157deb66c"
-        self.api_secret = "NmYyMzhmMDA5NjFjM2Q2YWRhYThlN2I4"
+        self.app_id = "xxxxx"
+        self.api_key = "xxxxx"
+        self.api_secret = "xxxxx"
         self.url = 'https://api.xf-yun.com/v1/private/sf8e6aca1'
 
     def get_auth_url(self, api_key, api_secret):
