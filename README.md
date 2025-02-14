@@ -41,6 +41,8 @@
 
 ### 5. 打开网站
 
+[基于图像识别的智能理书辅助小程序](https://yundaxinxi.cn)
+
 
 
 ## 使用说明
@@ -59,7 +61,8 @@
 
 ### miniprogram 文件夹
 
-此文件夹内容暂不可用，配套小程序移步 
+此文件夹内容暂不可用，配套小程序移步  [小程序](https://github.com/thirdh6o/DC_Miniprogram)
+
 
 ## 贡献
 
